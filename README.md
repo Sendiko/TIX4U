@@ -15,3 +15,4 @@ This project is a starting point for a Flutter application.
 ### changes - non ui changes
 ### refactor - moved packages, file renamed, etc.
 ### deletion - remove unnecessary items(ui component nor non ui)
+### pubspec changes - new dependency, etc.
