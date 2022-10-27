@@ -1,7 +1,11 @@
 import 'package:flutter/cupertino.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({
+    super.key,
+    required this.text
+  });
+  final String text;
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -10,8 +14,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text("Home"),
+    return Center(
+      child: Text(widget.text),
     );
   }
 }

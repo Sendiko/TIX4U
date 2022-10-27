@@ -1,7 +1,11 @@
 import 'package:flutter/cupertino.dart';
 
 class EventScreen extends StatefulWidget {
-  const EventScreen({super.key});
+  const EventScreen({
+    super.key,
+    required this.text
+  });
+  final String text;
 
   @override
   State<EventScreen> createState() => _EventScreenState();
