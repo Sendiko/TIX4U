@@ -1,8 +1,7 @@
-import 'package:etiket_mobile/screens/event_screen.dart';
-import 'package:etiket_mobile/screens/home_screen.dart';
-import 'package:etiket_mobile/screens/profile_screen.dart';
+import 'package:etiket_mobile/screens/main/event_screen.dart';
+import 'package:etiket_mobile/screens/main/home_screen.dart';
+import 'package:etiket_mobile/screens/main/profile_screen.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BottomBar extends StatefulWidget {
@@ -15,9 +14,9 @@ class BottomBar extends StatefulWidget {
 class _BottomBarState extends State<BottomBar> {
   int selectedScreen = 0;
   static final List<Widget> _widgetOptions = [
-    const HomeScreen(),
-    const EventScreen(),
-    const ProfileScreen()
+    const HomeScreen(text: "Home",),
+    const EventScreen(text: "Event",),
+    const ProfileScreen(text: "Profile",)
   ];
 
   void onItemTap(int screen) {
@@ -29,34 +28,47 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("TIX4U"),
-      ),
       body: Center(
         child: _widgetOptions[selectedScreen],
       ),
       bottomNavigationBar: BottomNavigationBar(
           currentIndex: selectedScreen,
           onTap: onItemTap,
-          elevation: 10,
+          elevation: 0,
           showSelectedLabels: false,
           showUnselectedLabels: false,
           selectedItemColor: Colors.red,
           items: const [
             BottomNavigationBarItem(
-                icon: Icon(FluentSystemIcons.ic_fluent_home_filled),
-                activeIcon: Icon(FluentSystemIcons.ic_fluent_home_filled),
-                label: "Home"),
+                icon: Icon(
+                    FluentSystemIcons.ic_fluent_home_regular
+                ),
+                activeIcon: Icon(
+                    FluentSystemIcons.ic_fluent_home_filled
+                ),
+                label: "Home"
+            ),
             BottomNavigationBarItem(
-                icon: Icon(FluentSystemIcons.ic_fluent_calendar_day_filled),
+                icon: Icon(
+                    FluentSystemIcons.ic_fluent_ticket_regular
+                ),
                 activeIcon:
-                    Icon(FluentSystemIcons.ic_fluent_calendar_day_filled),
-                label: "Event"),
+                    Icon(
+                        FluentSystemIcons.ic_fluent_ticket_filled
+                    ),
+                label: "Event"
+            ),
             BottomNavigationBarItem(
-                icon: Icon(FluentSystemIcons.ic_fluent_person_filled),
-                activeIcon: Icon(FluentSystemIcons.ic_fluent_person_filled),
-                label: "Profile")
-          ]),
+                icon: Icon(
+                    FluentSystemIcons.ic_fluent_person_regular
+                ),
+                activeIcon: Icon(
+                    FluentSystemIcons.ic_fluent_person_filled
+                ),
+                label: "Profile"
+            )
+          ]
+      ),
     );
   }
 }
