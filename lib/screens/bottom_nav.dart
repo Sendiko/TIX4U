@@ -1,6 +1,7 @@
 import 'package:etiket_mobile/screens/main/event_screen.dart';
 import 'package:etiket_mobile/screens/main/home_screen.dart';
 import 'package:etiket_mobile/screens/main/profile_screen.dart';
+import 'package:etiket_mobile/screens/utils/styles.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class BottomBar extends StatefulWidget {
 class _BottomBarState extends State<BottomBar> {
   int selectedScreen = 0;
   static final List<Widget> _widgetOptions = [
-    const HomeScreen(text: "Home",),
+    const HomeScreen(greeting: "Good morning!",),
     const EventScreen(text: "Event",),
     const ProfileScreen(text: "Profile",)
   ];
@@ -35,9 +36,11 @@ class _BottomBarState extends State<BottomBar> {
           currentIndex: selectedScreen,
           onTap: onItemTap,
           elevation: 0,
+          backgroundColor: Styles.primaryColor,
+          selectedItemColor: Styles.onPrimaryColor,
+          unselectedItemColor: Styles.onPrimaryColor,
           showSelectedLabels: false,
           showUnselectedLabels: false,
-          selectedItemColor: Colors.red,
           items: const [
             BottomNavigationBarItem(
                 icon: Icon(
