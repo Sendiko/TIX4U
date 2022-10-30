@@ -1,4 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+import '../utils/styles.dart';
 
 class EventScreen extends StatefulWidget {
   const EventScreen({
@@ -14,8 +17,11 @@ class EventScreen extends StatefulWidget {
 class _EventScreenState extends State<EventScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text("Event"),
+    return Scaffold(
+      backgroundColor: Styles.primaryColor,
+      body: Center(
+        child: Text(widget.text),
+      )
     );
   }
 }
