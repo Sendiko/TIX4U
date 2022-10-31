@@ -1,4 +1,4 @@
-import 'package:etiket_mobile/screens/bottom_nav.dart';
+import 'package:etiket_mobile/screens/container/main_container.dart';
 import 'package:etiket_mobile/screens/utils/styles.dart';
 import 'package:flutter/material.dart';
 

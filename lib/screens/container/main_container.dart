@@ -57,7 +57,7 @@ class _BottomBarState extends State<BottomBar> {
                 ),
                 activeIcon:
                     Icon(
-                        FluentSystemIcons.ic_fluent_ticket_filled
+                    FluentSystemIcons.ic_fluent_ticket_filled
                     ),
                 label: "Event"
             ),
