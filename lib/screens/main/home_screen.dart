@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ],
                     ),
-                    const HeaderImage(size: 48)
+                    const HeaderImage(size: 32)
                   ],
                 ),
               ]
