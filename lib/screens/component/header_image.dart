@@ -13,12 +13,12 @@ class HeaderImage extends StatelessWidget {
       height: size,
       width: size,
       decoration: const BoxDecoration(
-          image: DecorationImage(
-              fit: BoxFit.fitHeight,
-              image: AssetImage(
-                  "assets/images/android_logo.png"
-              )
+        image: DecorationImage(
+          fit: BoxFit.fitWidth,
+          image: AssetImage(
+              "assets/images/flutter.png"
           )
+        )
       ),
     );
   }
