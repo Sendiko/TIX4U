@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         primaryColor: Styles.primaryColor
       ),
-      home: const BottomBar()
+      home: const MainContainer()
     );
   }
 }
