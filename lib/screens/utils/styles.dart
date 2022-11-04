@@ -7,26 +7,31 @@ class Styles{
   static TextStyle textStyle = TextStyle(
       fontSize: 16,
       color: onPrimaryColor,
+      fontFamily: 'Poppins',
       fontWeight: FontWeight.w500
   );
   static TextStyle headlineStyle1 = TextStyle(
       fontSize: 24,
       color: onPrimaryColor,
+      fontFamily: 'Poppins',
       fontWeight: FontWeight.bold
   );
   static TextStyle headlineStyle2 = TextStyle(
       fontSize: 20,
       color: onPrimaryColor,
-      fontWeight: FontWeight.bold
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w600
   );
   static TextStyle headlineStyle3 = TextStyle(
       fontSize: 18,
       color: onPrimaryColor,
-      fontWeight: FontWeight.w500
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w600
   );
   static TextStyle headlineStyle4 = TextStyle(
       fontSize: 18,
       color: Colors.grey.shade500,
+      fontFamily: 'Poppins',
       fontWeight: FontWeight.w500
   );
 }

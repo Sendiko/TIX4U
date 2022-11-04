@@ -20,7 +20,10 @@ class _EventScreenState extends State<EventScreen> {
     return Scaffold(
       backgroundColor: Styles.primaryColor,
       body: Center(
-        child: Text(widget.text),
+        child: Text(
+          widget.text,
+          style: Styles.textStyle,
+        ),
       )
     );
   }
