@@ -1,5 +1,4 @@
-import 'package:etiket_mobile/screens/component/header_image.dart';
-import 'package:etiket_mobile/screens/utils/styles.dart';
+import 'package:etiket_mobile/utils/styles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
