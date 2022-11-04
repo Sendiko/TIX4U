@@ -5,17 +5,17 @@ import 'package:etiket_mobile/screens/utils/styles.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
-class BottomBar extends StatefulWidget {
-  const BottomBar({Key? key}) : super(key: key);
+class MainContainer extends StatefulWidget {
+  const MainContainer({Key? key}) : super(key: key);
 
   @override
-  State<BottomBar> createState() => _BottomBarState();
+  State<MainContainer> createState() => _MainContainerState();
 }
 
-class _BottomBarState extends State<BottomBar> {
+class _MainContainerState extends State<MainContainer> {
   int selectedScreen = 0;
   static final List<Widget> _widgetOptions = [
-    const HomeScreen(greeting: "Good morning!",),
+    const HomeScreen(name: "Sendiko",),
     const EventScreen(text: "Event",),
     const ProfileScreen(text: "Profile",)
   ];
