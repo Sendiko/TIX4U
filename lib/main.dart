@@ -1,6 +1,6 @@
 import 'package:etiket_mobile/screens/container/main_container.dart';
-import 'package:etiket_mobile/screens/utils/styles.dart';
 import 'package:flutter/material.dart';
+import 'package:etiket_mobile/utils/color_schemes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         useMaterial3: true,
-        primaryColor: Styles.primaryColor
+        colorScheme: lightColorScheme
+      ),
+      darkTheme: ThemeData(
+        useMaterial3: true,
+        colorScheme: darkColorScheme
       ),
       home: const MainContainer()
     );
