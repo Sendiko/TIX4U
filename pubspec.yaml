@@ -103,7 +103,7 @@ flutter:
         - asset: assets/fonts/Poppins-SemiBoldItalic.ttf
           style : italic
           weight : 600
-        - asset: assets/fonts/Poppins-MediumBold.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
           style : normal
           weight : 500
         - asset: assets/fonts/Poppins-MediumItalic.ttf
