@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({
     super.key,
-    required this.greeting
+    required this.name
   });
-  final String greeting;
+  final String name;
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: ListView(
         children: [
           Container(
-            padding: const EdgeInsets.only(left: 18, top: 24, right: 18),
+            padding: const EdgeInsets.only(left: 18, top: 32, right: 18),
             child: Column(
               children: [
                 Row(
@@ -33,16 +33,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          widget.greeting,
-                          style: Styles.headlineStyle3,
-                        ),
-                        Text(
-                          "Book Tickets",
+                          "Hi, ${widget.name}!",
                           style: Styles.headlineStyle2,
                         ),
                       ],
                     ),
-                    const HeaderImage(size: 32)
                   ],
                 ),
               ]
