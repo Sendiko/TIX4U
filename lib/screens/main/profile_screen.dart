@@ -20,7 +20,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Scaffold(
       backgroundColor: Styles.primaryColor,
       body: Center(
-        child: Text(widget.text),
+        child:
+        Text(
+          widget.text,
+          style: Styles.textStyle,
+        ),
       )
     );
   }
