@@ -18,7 +18,6 @@ class _EventScreenState extends State<EventScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Styles.primaryColor,
       body: Center(
         child: Text(
           widget.text,
