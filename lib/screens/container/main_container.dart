@@ -33,44 +33,43 @@ class _MainContainerState extends State<MainContainer> {
         child: _widgetOptions[selectedScreen],
       ),
       bottomNavigationBar: BottomNavigationBar(
-          currentIndex: selectedScreen,
-          onTap: onItemTap,
-          elevation: 0,
-          backgroundColor: Styles.primaryColor,
-          selectedItemColor: Styles.onPrimaryColor,
-          unselectedItemColor: Styles.onPrimaryColor,
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
-          items: const [
-            BottomNavigationBarItem(
-                icon: Icon(
-                    FluentSystemIcons.ic_fluent_home_regular
-                ),
-                activeIcon: Icon(
-                    FluentSystemIcons.ic_fluent_home_filled
-                ),
-                label: "Home"
+        currentIndex: selectedScreen,
+        onTap: onItemTap,
+        elevation: 0,
+        backgroundColor: Styles.tertiaryColor,
+        selectedItemColor: Styles.onTertiaryColor,
+        unselectedItemColor: Styles.onTertiaryColor,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(
+              FluentSystemIcons.ic_fluent_home_regular
             ),
-            BottomNavigationBarItem(
-                icon: Icon(
-                    FluentSystemIcons.ic_fluent_ticket_regular
-                ),
-                activeIcon:
-                    Icon(
-                    FluentSystemIcons.ic_fluent_ticket_filled
-                    ),
-                label: "Event"
+            activeIcon: Icon(
+              FluentSystemIcons.ic_fluent_home_filled
             ),
-            BottomNavigationBarItem(
-                icon: Icon(
-                    FluentSystemIcons.ic_fluent_person_regular
-                ),
-                activeIcon: Icon(
-                    FluentSystemIcons.ic_fluent_person_filled
-                ),
-                label: "Profile"
-            )
-          ]
+            label: "Home"
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              FluentSystemIcons.ic_fluent_ticket_regular
+            ),
+            activeIcon: Icon(
+              FluentSystemIcons.ic_fluent_ticket_filled
+            ),
+            label: "Event"
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+                FluentSystemIcons.ic_fluent_person_regular
+            ),
+            activeIcon: Icon(
+                FluentSystemIcons.ic_fluent_person_filled
+            ),
+            label: "Profile"
+          )
+        ]
       ),
     );
   }
