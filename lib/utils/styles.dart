@@ -19,7 +19,16 @@ class Styles{
   static Color tertiaryContainerColor = const Color(0xFFFFD8E4);
   static Color onTertiaryContainerColor = const Color(0xFF31111D);
 
+  // error color
+  static Color errorColor = const Color(0xFFB3261E);
+  static Color onErrorColor = const Color(0xFFFFFFFF);
+  static Color errorContainerColor = const Color(0xFFF9DEDC);
+  static Color onErrorContainerColor = const Color(0xFF410E0B);
+
+  // background color
   static Color backgroundColor = const Color(0xFFFFFBFE);
+  static Color onBackgroundColor = const Color(0xFF1C1B1F);
+
   static TextStyle textStyle = TextStyle(
       fontSize: 16,
       color: primaryColor,
@@ -46,7 +55,7 @@ class Styles{
   );
   static TextStyle headlineStyle4 = TextStyle(
       fontSize: 18,
-      color: Colors.grey.shade500,
+      color: onBackgroundColor,
       fontFamily: 'Poppins',
       fontWeight: FontWeight.w500
   );
