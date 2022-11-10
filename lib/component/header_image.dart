@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
+import '../utils/styles.dart';
+
 class HeaderImage extends StatelessWidget {
   const HeaderImage({
     super.key,
