@@ -15,8 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: Styles.primaryColor,
       body: Center(
-        child:
-        Image.asset(
+        child: Image.asset(
           "assets/images/app_icon.png",
           height: 128,
           width: 128,
