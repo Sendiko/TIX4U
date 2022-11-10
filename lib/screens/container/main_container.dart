@@ -35,7 +35,7 @@ class _MainContainerState extends State<MainContainer> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedScreen,
         onTap: onItemTap,
-        elevation: 0,
+        elevation: 8,
         backgroundColor: Styles.tertiaryColor,
         selectedItemColor: Styles.onTertiaryColor,
         unselectedItemColor: Styles.onTertiaryColor,
