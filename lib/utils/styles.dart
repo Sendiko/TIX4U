@@ -54,9 +54,22 @@ class Styles{
       fontWeight: FontWeight.w600
   );
   static TextStyle headlineStyle4 = TextStyle(
-      fontSize: 18,
-      color: onBackgroundColor,
+      fontSize: 16,
+      color: primaryColor,
       fontFamily: 'Poppins',
       fontWeight: FontWeight.w500
   );
+
+  static TextStyle ticketLabel = const TextStyle(
+      fontSize: 8,
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w500
+  );
+
+  static TextStyle smallerTicketLabel = const TextStyle(
+      fontSize: 6,
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w500
+  );
+
 }
