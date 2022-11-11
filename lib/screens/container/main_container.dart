@@ -1,4 +1,4 @@
-import 'package:etiket_mobile/screens/main/event_screen.dart';
+import 'package:etiket_mobile/screens/main/ticket_screen.dart';
 import 'package:etiket_mobile/screens/main/home_screen.dart';
 import 'package:etiket_mobile/screens/main/profile_screen.dart';
 import 'package:etiket_mobile/utils/styles.dart';
@@ -16,7 +16,7 @@ class _MainContainerState extends State<MainContainer> {
   int selectedScreen = 0;
   static final List<Widget> _widgetOptions = [
     const HomeScreen(name: "Sendiko",),
-    const EventScreen(text: "Event",),
+    const TicketScreen(text: "Event",),
     const ProfileScreen(text: "Profile",)
   ];
 
