@@ -32,45 +32,55 @@ class _MainContainerState extends State<MainContainer> {
       body: Center(
         child: _widgetOptions[selectedScreen],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: selectedScreen,
-        onTap: onItemTap,
-        elevation: 8,
-        backgroundColor: Styles.tertiaryColor,
-        selectedItemColor: Styles.onTertiaryColor,
-        unselectedItemColor: Styles.onTertiaryColor,
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(
-              FluentSystemIcons.ic_fluent_home_regular
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+          boxShadow: <BoxShadow>[
+            BoxShadow(
+              color: Styles.outlineColor,
+              blurRadius: 15,
+                offset: const Offset(0.0, 0.75)
+            )
+          ]
+        ),
+        child: BottomNavigationBar(
+          currentIndex: selectedScreen,
+          onTap: onItemTap,
+          backgroundColor: Styles.backgroundColor,
+          selectedItemColor: Styles.onPrimaryContainerColor,
+          unselectedItemColor: Styles.onPrimaryContainerColor,
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(
+                FluentSystemIcons.ic_fluent_home_regular
+              ),
+              activeIcon: Icon(
+                FluentSystemIcons.ic_fluent_home_filled
+              ),
+              label: "Home"
             ),
-            activeIcon: Icon(
-              FluentSystemIcons.ic_fluent_home_filled
+            BottomNavigationBarItem(
+              icon: Icon(
+                FluentSystemIcons.ic_fluent_ticket_regular
+              ),
+              activeIcon: Icon(
+                FluentSystemIcons.ic_fluent_ticket_filled
+              ),
+              label: "Event"
             ),
-            label: "Home"
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              FluentSystemIcons.ic_fluent_ticket_regular
-            ),
-            activeIcon: Icon(
-              FluentSystemIcons.ic_fluent_ticket_filled
-            ),
-            label: "Event"
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
+            BottomNavigationBarItem(
+              icon: Icon(
                 FluentSystemIcons.ic_fluent_person_regular
-            ),
-            activeIcon: Icon(
+              ),
+              activeIcon: Icon(
                 FluentSystemIcons.ic_fluent_person_filled
-            ),
-            label: "Profile"
-          )
-        ]
-      ),
+              ),
+              label: "Profile"
+            )
+          ]
+        ),
+      )
     );
   }
 }
