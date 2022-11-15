@@ -1,4 +1,4 @@
-import 'package:etiket_mobile/screens/container/main_container.dart';
+import 'package:etiket_mobile/screens/welcome/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:etiket_mobile/utils/color_schemes.dart';
 
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
             useMaterial3: true,
             colorScheme: darkColorScheme
         ),
-        home: const MainContainer()
+        home: const SplashScreen()
     );
   }
 }
