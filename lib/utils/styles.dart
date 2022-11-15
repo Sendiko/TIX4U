@@ -28,48 +28,56 @@ class Styles{
   // background color
   static Color backgroundColor = const Color(0xFFFFFBFE);
   static Color onBackgroundColor = const Color(0xFF1C1B1F);
+  static Color outlineColor = const Color(0xFF79747E);
 
   static TextStyle textStyle = TextStyle(
       fontSize: 16,
       color: primaryColor,
       fontFamily: 'Poppins',
-      fontWeight: FontWeight.w500
+      fontWeight: FontWeight.w500,
+      decoration: TextDecoration.none
   );
   static TextStyle headlineStyle1 = TextStyle(
       fontSize: 24,
       color: primaryColor,
       fontFamily: 'Poppins',
-      fontWeight: FontWeight.bold
+      fontWeight: FontWeight.bold,
+      decoration: TextDecoration.none
   );
   static TextStyle headlineStyle2 = TextStyle(
       fontSize: 20,
       color: primaryColor,
       fontFamily: 'Poppins',
-      fontWeight: FontWeight.w600
+      fontWeight: FontWeight.w600,
+      decoration: TextDecoration.none
   );
   static TextStyle headlineStyle3 = TextStyle(
       fontSize: 18,
       color: primaryColor,
       fontFamily: 'Poppins',
-      fontWeight: FontWeight.w600
+      fontWeight: FontWeight.w600,
+      decoration: TextDecoration.none
   );
   static TextStyle headlineStyle4 = TextStyle(
       fontSize: 16,
       color: primaryColor,
       fontFamily: 'Poppins',
-      fontWeight: FontWeight.w500
+      fontWeight: FontWeight.w500,
+      decoration: TextDecoration.none
   );
 
   static TextStyle ticketLabel = const TextStyle(
       fontSize: 8,
       fontFamily: 'Poppins',
-      fontWeight: FontWeight.w500
+      fontWeight: FontWeight.w500,
+      decoration: TextDecoration.none
   );
 
   static TextStyle smallerTicketLabel = const TextStyle(
       fontSize: 6,
       fontFamily: 'Poppins',
-      fontWeight: FontWeight.w500
+      fontWeight: FontWeight.w500,
+      decoration: TextDecoration.none
   );
 
 }
