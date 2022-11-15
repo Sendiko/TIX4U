@@ -1,12 +1,8 @@
-import 'package:etiket_mobile/component/homepage_header.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:etiket_mobile/utils/styles.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({
-    super.key,
-    required this.name
-  });
+  const HomeScreen({super.key, required this.name});
   final String name;
 
   @override
@@ -17,17 +13,15 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        children: [
-          Container(
-            padding: const EdgeInsets.only(left: 16, top: 32, right: 16),
-            child: Column(
-              children: [
-                HomepageHeader(name: widget.name)
-              ]
-            )
-          )
-        ],
+      appBar: AppBar(
+        backgroundColor: Styles.backgroundColor,
+        title: Text(
+          "Hi, ${widget.name}!",
+          style: Styles.headlineStyle2,
+        ),
+      ),
+      body: Container(
+        color: Styles.backgroundColor,
       ),
     );
   }
