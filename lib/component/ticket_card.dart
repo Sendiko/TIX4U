@@ -1,6 +1,5 @@
 import 'package:etiket_mobile/utils/styles.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class TicketCard extends StatefulWidget {
@@ -23,18 +22,13 @@ class _TicketCardState extends State<TicketCard> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  "BORN PINK",
-                  style: Styles.ticketLabel
-                ),
+                Text("BORN PINK", style: Styles.ticketLabel),
                 Container(
-                  padding : const EdgeInsets.only(top: 8, bottom: 8),
+                  padding: const EdgeInsets.only(top: 8, bottom: 8),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      const Icon(
-                        FluentSystemIcons.ic_fluent_ticket_filled
-                      ),
+                      const Icon(FluentSystemIcons.ic_fluent_ticket_filled),
                       Text(
                         "BLACKPINK WORLD TOUR",
                         style: Styles.smallerTicketLabel,
@@ -43,7 +37,7 @@ class _TicketCardState extends State<TicketCard> {
                   ),
                 ),
                 MaterialButton(
-                  onPressed: (){},
+                  onPressed: () {},
                   color: Styles.tertiaryColor,
                   textColor: Styles.onTertiaryColor,
                   child: const Text("view detail"),
@@ -58,9 +52,7 @@ class _TicketCardState extends State<TicketCard> {
                 children: [
                   Row(
                     children: [
-                      const Icon(
-                        FluentSystemIcons.ic_fluent_location_filled
-                      ),
+                      const Icon(FluentSystemIcons.ic_fluent_location_filled),
                       Text(
                         "JAKARTA, INDONESIA",
                         style: Styles.ticketLabel,
