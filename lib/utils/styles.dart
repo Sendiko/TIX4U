@@ -37,6 +37,13 @@ class Styles{
       fontWeight: FontWeight.w500,
       decoration: TextDecoration.none
   );
+  static TextStyle smallerTextStyle = TextStyle(
+      fontSize: 14,
+      color: primaryColor,
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w500,
+      decoration: TextDecoration.none
+  );
   static TextStyle headlineStyle1 = TextStyle(
       fontSize: 24,
       color: primaryColor,
