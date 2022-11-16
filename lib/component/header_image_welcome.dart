@@ -80,7 +80,7 @@ class _HeaderImageWelcomeState extends State<HeaderImageWelcome> {
               padding: EdgeInsets.only(top: widget.topPadSm),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
                     height: widget.imgSzSm,

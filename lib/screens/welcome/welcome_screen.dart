@@ -27,8 +27,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               botPadSm: 16,
               topPadLg: 64,
               topPadSm: 16,
-              imgSzLg: 128,
-              imgSzSm: 102
+              imgSzLg: 148,
+              imgSzSm: 108
             ),
             Container(
               padding: const EdgeInsets.only(top: 32, left: 52, right: 52),
@@ -48,7 +48,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ),
             ),
             Container(
-              padding: const EdgeInsets.only(top: 72, right: 64, left: 64),
+              padding: const EdgeInsets.only(top: 72, right: 48, left: 48),
               child: MaterialButton(
                 color: Styles.primaryContainerColor,
                 shape: RoundedRectangleBorder(
