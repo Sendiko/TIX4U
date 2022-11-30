@@ -50,7 +50,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             Container(
               padding: const EdgeInsets.only(top: 72, right: 48, left: 48),
               child: MaterialButton(
-                color: Styles.primaryContainerColor,
+                color: Styles.primaryColor,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),
@@ -62,7 +62,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     children: [
                       Text(
                         "Get Started",
-                        style: Styles.buttonTextStyle,
+                        style: Styles.buttonTextStyleAlternative,
                       ),
                       Container(
                         padding: const EdgeInsets.only(left: 8),
@@ -70,7 +70,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           FluentSystemIcons
                               .ic_fluent_arrow_right_circle_filled,
                           size: 20,
-                          color: Styles.primaryColor,
+                          color: Styles.onPrimaryColor,
                         ),
                       )
                     ],
