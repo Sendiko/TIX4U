@@ -23,12 +23,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const HeaderImageWelcome(
-              botPadLg: 32,
-              botPadSm: 16,
-              topPadLg: 64,
-              topPadSm: 16,
-              imgSzLg: 148,
-              imgSzSm: 108
+                botPadLg: 32,
+                botPadSm: 16,
+                topPadLg: 64,
+                topPadSm: 16,
+                imgSzLg: 154,
+                imgSzSm: 102
             ),
             Container(
               padding: const EdgeInsets.only(top: 32, left: 52, right: 52),
@@ -62,7 +62,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     children: [
                       Text(
                         "Get Started",
-                        style: Styles.headlineStyle4,
+                        style: Styles.buttonTextStyle,
                       ),
                       Container(
                         padding: const EdgeInsets.only(left: 8),
