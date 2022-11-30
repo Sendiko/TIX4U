@@ -14,13 +14,6 @@ class _TicketScreenState extends State<TicketScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Styles.backgroundColor,
-          title: Text(
-            "My Tickets",
-            style: Styles.headlineStyle1,
-          ),
-        ),
         body: PageView(
           children: [
             Container(
