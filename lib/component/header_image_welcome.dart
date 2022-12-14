@@ -33,93 +33,129 @@ class _HeaderImageWelcomeState extends State<HeaderImageWelcome> {
           children: [
             Container(
               padding: EdgeInsets.only(bottom: widget.botPadSm, top: widget.topPadLg),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.end,
+              height: 186,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
                 children: [
                   Container(
-                    height: widget.imgSzSm,
-                    width: widget.imgSzSm,
-                    decoration: const BoxDecoration(
-                        image: DecorationImage(
-                            fit: BoxFit.fitWidth,
-                            image: AssetImage(
-                                "assets/images/concert_images/concert_image_1.png"
+                    margin: const EdgeInsets.only(right: 8),
+                    child: ClipRRect(
+                      borderRadius : BorderRadius.circular(8),
+                      child: Container(
+                        height: widget.imgSzSm,
+                        width: widget.imgSzLg,
+                        decoration: const BoxDecoration(
+                            image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage(
+                                    "assets/images/concert_images/concert_images_1.jpg"
+                                )
                             )
-                        )
+                        ),
+                      ),
                     ),
                   ),
                   Container(
-                    height: widget.imgSzLg,
-                    width: widget.imgSzLg,
-                    decoration: const BoxDecoration(
-                        image: DecorationImage(
-                            fit: BoxFit.fitWidth,
-                            image: AssetImage(
-                                "assets/images/concert_images/concert_image_2.png"
+                    margin: const EdgeInsets.symmetric(horizontal: 8),
+                    child: ClipRRect(
+                      borderRadius : BorderRadius.circular(8),
+                      child: Container(
+                        height: widget.imgSzSm,
+                        width: widget.imgSzLg,
+                        decoration: const BoxDecoration(
+                            image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage(
+                                    "assets/images/concert_images/concert_images_2.jpg"
+                                )
                             )
-                        )
+                        ),
+                      ),
                     ),
                   ),
                   Container(
-                    height: widget.imgSzSm,
-                    width: widget.imgSzSm,
-                    decoration: const BoxDecoration(
-                        image: DecorationImage(
-                            fit: BoxFit.fitWidth,
-                            image: AssetImage(
-                                "assets/images/concert_images/concert_image_3.png"
+                    margin: const EdgeInsets.only(left: 8),
+                    child: ClipRRect(
+                      borderRadius : BorderRadius.circular(8),
+                      child: Container(
+                        height: widget.imgSzSm,
+                        width: widget.imgSzLg,
+                        decoration: const BoxDecoration(
+                            image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage(
+                                    "assets/images/concert_images/concert_images_3.jpg"
+                                )
                             )
-                        )
+                        ),
+                      ),
                     ),
                   ),
                 ],
-              ),
+              )
             ),
             Container(
               padding: EdgeInsets.only(top: widget.topPadSm),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.end,
+              height: 128,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
                 children: [
                   Container(
-                    height: widget.imgSzSm,
-                    width: widget.imgSzSm,
-                    decoration: const BoxDecoration(
-                        image: DecorationImage(
-                            fit: BoxFit.fitWidth,
-                            image: AssetImage(
-                                "assets/images/concert_images/concert_image_4.png"
+                    margin: const EdgeInsets.only(right: 8),
+                    child: ClipRRect(
+                      borderRadius : BorderRadius.circular(8),
+                      child: Container(
+                        height: widget.imgSzSm,
+                        width: widget.imgSzLg,
+                        decoration: const BoxDecoration(
+                            image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage(
+                                    "assets/images/concert_images/concert_images_4.jpg"
+                                )
                             )
-                        )
+                        ),
+                      ),
                     ),
                   ),
                   Container(
-                    height: widget.imgSzLg,
-                    width: widget.imgSzLg,
-                    decoration: const BoxDecoration(
-                        image: DecorationImage(
-                            fit: BoxFit.fitWidth,
-                            image: AssetImage(
-                                "assets/images/concert_images/concert_image_5.png"
+                    margin: const EdgeInsets.symmetric(horizontal: 8),
+                    child: ClipRRect(
+                      borderRadius : BorderRadius.circular(8),
+                      child: Container(
+                        height: widget.imgSzSm,
+                        width: widget.imgSzLg,
+                        decoration: const BoxDecoration(
+                            image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage(
+                                    "assets/images/concert_images/concert_images_5.jpg"
+                                )
                             )
-                        )
+                        ),
+                      ),
                     ),
                   ),
                   Container(
-                    height: widget.imgSzSm,
-                    width: widget.imgSzSm,
-                    decoration: const BoxDecoration(
-                        image: DecorationImage(
-                            fit: BoxFit.fitWidth,
-                            image: AssetImage(
-                                "assets/images/concert_images/concert_image_6.png"
+                    margin: const EdgeInsets.only(left: 8),
+                    child: ClipRRect(
+                      borderRadius : BorderRadius.circular(8),
+                      child: Container(
+                        height: widget.imgSzSm,
+                        width: widget.imgSzLg,
+                        decoration: const BoxDecoration(
+                            image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage(
+                                    "assets/images/concert_images/concert_images_6.jpg"
+                                )
                             )
-                        )
+                        ),
+                      ),
                     ),
                   ),
                 ],
-              ),
+              )
             ),
           ],
         )

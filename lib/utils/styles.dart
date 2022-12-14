@@ -30,6 +30,13 @@ class Styles{
   static Color onBackgroundColor = const Color(0xFF1C1B1F);
   static Color outlineColor = const Color(0xFF79747E);
 
+  static TextStyle buttonTextStyle = TextStyle(
+      fontSize: 16,
+      color: onPrimaryContainerColor,
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w500,
+      decoration: TextDecoration.none
+  );
   static TextStyle textStyle = TextStyle(
       fontSize: 16,
       color: primaryColor,
@@ -37,11 +44,18 @@ class Styles{
       fontWeight: FontWeight.w500,
       decoration: TextDecoration.none
   );
+  static TextStyle thinnerTextStyle = TextStyle(
+      fontSize: 16,
+      color: primaryColor,
+      fontFamily: 'Poppins',
+      fontWeight: FontWeight.w400,
+      decoration: TextDecoration.none
+  );
   static TextStyle smallerTextStyle = TextStyle(
       fontSize: 14,
       color: primaryColor,
       fontFamily: 'Poppins',
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w400,
       decoration: TextDecoration.none
   );
   static TextStyle headlineStyle1 = TextStyle(

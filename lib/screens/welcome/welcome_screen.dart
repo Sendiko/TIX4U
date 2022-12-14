@@ -23,12 +23,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const HeaderImageWelcome(
-              botPadLg: 32,
-              botPadSm: 16,
-              topPadLg: 64,
-              topPadSm: 16,
-              imgSzLg: 128,
-              imgSzSm: 102
+                botPadLg: 32,
+                botPadSm: 16,
+                topPadLg: 64,
+                topPadSm: 16,
+                imgSzLg: 154,
+                imgSzSm: 102
             ),
             Container(
               padding: const EdgeInsets.only(top: 32, left: 52, right: 52),
@@ -48,9 +48,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ),
             ),
             Container(
-              padding: const EdgeInsets.only(top: 72, right: 64, left: 64),
+              padding: const EdgeInsets.only(top: 72, right: 48, left: 48),
               child: MaterialButton(
-                color: Styles.primaryContainerColor,
+                color: Styles.primaryColor,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),
@@ -62,7 +62,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     children: [
                       Text(
                         "Get Started",
-                        style: Styles.headlineStyle4,
+                        style: Styles.buttonTextStyleAlternative,
                       ),
                       Container(
                         padding: const EdgeInsets.only(left: 8),
@@ -70,7 +70,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           FluentSystemIcons
                               .ic_fluent_arrow_right_circle_filled,
                           size: 20,
-                          color: Styles.primaryColor,
+                          color: Styles.onPrimaryColor,
                         ),
                       )
                     ],
